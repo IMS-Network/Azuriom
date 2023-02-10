@@ -12,4 +12,4 @@ updates:
       - {{name}} from {{current_version}} to {{new_version}}
       {{/each}}
       
-      Thank you for using dependabot!
+      Thank you for using dependabot!!
