@@ -153,6 +153,35 @@
                 </div>
             </div>
 
+            @if($canChangeName)
+                <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h2 class="card-title">
+                                {{ trans('messages.profile.change_name') }}
+                            </h2>
+
+                            <form action="{{ route('profile.name') }}" method="POST">
+                                @csrf
+
+                                <div class="mb-3">
+                                    <label class="form-label" for="nameInput">{{ trans('auth.name') }}</label>
+                                    <input type="text" class="form-control @error('name') is-invalid @enderror" id="nameInput" name="name" value="{{ old('name', $user->name ?? '') }}" required>
+
+                                    @error('name')
+                                    <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                                    @enderror
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="bi bi-check-lg"></i> {{ trans('messages.actions.update') }}
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            @endif
+
             @if(setting('users.money_transfer'))
                 <div class="col-md-6">
                     <div class="card">
@@ -190,20 +219,20 @@
                     </div>
                 </div>
             @endif
+        @endif
 
-            @foreach($cards ?? [] as $card)
-                <div class="col-md-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h2 class="card-title">
-                                {{ $card['name'] }}
-                            </h2>
+        @foreach($cards ?? [] as $card)
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            {{ $card['name'] }}
+                        </h2>
 
-                            @include($card['view'])
-                        </div>
+                        @include($card['view'])
                     </div>
                 </div>
-            @endforeach
-        </div>
-    @endif
+            </div>
+        @endforeach
+    </div>
 @endsection
