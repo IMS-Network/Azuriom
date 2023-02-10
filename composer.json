@@ -16,7 +16,7 @@
         "laravel/framework": "^9.19",
         "laravel/socialite": "^5.4",
         "laravel/tinker": "^2.7",
-        "laravel/ui": "^3.4.2",
+        "laravel/ui": "^4.2.0",
         "pragmarx/google2fa": "^8.0",
         "symfony/filesystem": "^6.0",
         "textalk/websocket": "^1.5",
