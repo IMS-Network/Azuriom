@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: "composer"
+    schedule:
+      interval: "weekly"
+    directory: "/"
+    schedule-interval: "weekly"
+    open-pull-request-template: |
+      This pull request updates the following dependencies:
+      
+      {{#each dependencies}}
+      - {{name}} from {{current_version}} to {{new_version}}
+      {{/each}}
+      
+      Thank you for using dependabot!
