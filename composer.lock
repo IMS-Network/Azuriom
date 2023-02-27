@@ -6097,24 +6097,24 @@
         },
         {
             "name": "truckersmp/steam-socialite",
-            "version": "v1.5.0",
+            "version": "v1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TruckersMP/Steam-Socialite.git",
-                "reference": "b4f45a60e53d9088f7a908b893ab5368e704bee1"
+                "reference": "b2eb02db06c0f74bf791c0ddd7ed7027d2c706e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TruckersMP/Steam-Socialite/zipball/b4f45a60e53d9088f7a908b893ab5368e704bee1",
-                "reference": "b4f45a60e53d9088f7a908b893ab5368e704bee1",
+                "url": "https://api.github.com/repos/TruckersMP/Steam-Socialite/zipball/b2eb02db06c0f74bf791c0ddd7ed7027d2c706e3",
+                "reference": "b2eb02db06c0f74bf791c0ddd7ed7027d2c706e3",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "guzzlehttp/guzzle": "^6.5|^7.0",
-                "illuminate/contracts": "^6.0|^7.0|^8.0|^9.0",
-                "illuminate/http": "^6.0|^7.0|^8.0|^9.0",
-                "illuminate/support": "^6.0|^7.0|^8.0|^9.0",
+                "illuminate/contracts": "^6.0|^7.0|^8.0|^9.0|^10.0",
+                "illuminate/http": "^6.0|^7.0|^8.0|^9.0|^10.0",
+                "illuminate/support": "^6.0|^7.0|^8.0|^9.0|^10.0",
                 "laravel/socialite": "^4.4|^5.0",
                 "php": "^7.3|^8.0"
             },
@@ -6166,9 +6166,9 @@
             ],
             "support": {
                 "issues": "https://github.com/TruckersMP/Steam-Socialite/issues",
-                "source": "https://github.com/TruckersMP/Steam-Socialite/tree/v1.5.0"
+                "source": "https://github.com/TruckersMP/Steam-Socialite/tree/v1.6.0"
             },
-            "time": "2023-01-04T13:07:55+00:00"
+            "time": "2023-02-15T08:49:10+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
